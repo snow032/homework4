@@ -1,0 +1,104 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.pricing {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /* height: auto;
+    width: 100%; */
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+}
+ 
+#logo {
+  animation-name: logo_fade;
+  animation-duration: 3s;
+}
+
+@keyframes logo_fade {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+}
+
+@media screen and (min-width: 700px){
+    header {
+      height: auto;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .nav_links {
+      display: flex;
+      flex-direction: row;
+      align-content: space-between;
+    }
+  
+    #logo {
+      width: 400px;
+      height: auto;
+      justify-content: flex-start;
+    }
+
+    .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    }
+
+    .card {
+    width: 300px;
+    height: auto;
+    }
+
+    .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    }
+  
+    .gallery img {
+    width: 300px;
+    height: auto;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    #logo {
+    animation: none;
+    }
+}
